@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="COTIZAR" Height="528" Width="921">
     <Grid Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <ListView HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="750" Margin="28,98,0,0">
             <ListView.View>
                 <GridView>

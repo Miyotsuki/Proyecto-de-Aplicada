@@ -12,8 +12,8 @@
         <Label Content="CLIENTE:" HorizontalAlignment="Left" Height="26" Margin="166,98,0,0" VerticalAlignment="Top" Width="82"/>
         <Label Content="NOMBRE:" HorizontalAlignment="Left" Height="26" Margin="60,133,0,0" VerticalAlignment="Top" Width="82"/>
         <Label Content="APELLIDOS:" HorizontalAlignment="Left" Height="26" Margin="58,185,0,0" VerticalAlignment="Top" Width="82"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="142,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" TextChanged="TextBox_TextChanged_1" Text="YOEL" />
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="140,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" Text="FERNANDEZ"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="142,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255"  />
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="140,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" />
         <Label Content="TELÉFONO:" HorizontalAlignment="Left" Height="31" Margin="58,241,0,0" VerticalAlignment="Top" Width="82"/>
         <TextBox HorizontalAlignment="Left" Height="32" Margin="142,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" Text="-"/>
         <Button Content="NUEVA COTIZACION" HorizontalAlignment="Left" Height="34" Margin="535,132,0,0" VerticalAlignment="Top" Width="160"/>

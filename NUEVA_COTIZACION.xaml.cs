@@ -24,6 +24,6 @@ namespace Proyecto_de_Aplicada
             InitializeComponent();
         }
 
-    
+
     }
 }

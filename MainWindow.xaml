@@ -8,11 +8,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label Content="Correo:" HorizontalAlignment="Left" Height="28" Margin="265,130,0,0" VerticalAlignment="Top" Width="84"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="265,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="tb_correo" HorizontalAlignment="Left" Height="26" Margin="265,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
         <Label Content="Contraseña" HorizontalAlignment="Left" Height="28" Margin="265,213,0,0" VerticalAlignment="Top" Width="84"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="265,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="tb_contrasena" HorizontalAlignment="Left" Height="26" Margin="265,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
         <Label Content="INICIO DE SESIÓN:" HorizontalAlignment="Left" Height="45" Margin="286,85,0,0" VerticalAlignment="Top" Width="188" FontSize="18"/>
-        <Button Content="INICIAR" HorizontalAlignment="Left" Height="35" Margin="308,310,0,0" VerticalAlignment="Top" Width="144"/>
+        <Button x:Name="b_iniciar" Content="INICIAR" HorizontalAlignment="Left" Height="35" Margin="308,310,0,0" VerticalAlignment="Top" Width="144"/>
 
     </Grid>
 </Window>

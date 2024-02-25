@@ -10,7 +10,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListView HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="750" Margin="28,98,0,0">
+        <ListView x:Name="lv_productos" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="750" Margin="28,98,0,0">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="CÓDIGO" Width="60"/>
@@ -24,12 +24,12 @@
             </ListView.View>
         </ListView>
         <Label Content="COTIZAR" HorizontalAlignment="Center" Height="37" Margin="0,5,0,0" VerticalAlignment="Top" Width="112" FontSize="22" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="28,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="372"/>
-        <Button Content="BUSCAR" HorizontalAlignment="Center" Height="29" Margin="0,56,0,0" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="tb_buscarCot" HorizontalAlignment="Left" Height="29" Margin="28,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="372"/>
+        <Button x:Name="b_buscar" Content="BUSCAR" HorizontalAlignment="Center" Height="29" Margin="0,56,0,0" VerticalAlignment="Top" Width="111"/>
         <Label Content="CANTIDAD:" HorizontalAlignment="Left" Height="25" Margin="798,155,0,0" VerticalAlignment="Top" Width="96"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="798,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" FontSize="20"/>
-        <Button Content="AGREGAR" HorizontalAlignment="Left" Height="27" Margin="798,231,0,0" VerticalAlignment="Top" Width="96"/>
-        <ListView HorizontalAlignment="Left" Height="188" Margin="45,277,0,0" VerticalAlignment="Top" Width="527">
+        <TextBox x:Name="tb_cantidadProd" HorizontalAlignment="Left" Height="29" Margin="798,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" FontSize="20"/>
+        <Button x:Name="b_agregarPro" Content="AGREGAR" HorizontalAlignment="Left" Height="27" Margin="798,231,0,0" VerticalAlignment="Top" Width="96"/>
+        <ListView x:Name="lv_cotizacionList" HorizontalAlignment="Left" Height="188" Margin="45,277,0,0" VerticalAlignment="Top" Width="527">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ITEM" Width="60"/>
@@ -40,12 +40,12 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="ELIMINAR" HorizontalAlignment="Left" Height="33" Margin="618,277,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="GUARDAR" HorizontalAlignment="Left" Height="32" Margin="618,323,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="VOLVER" HorizontalAlignment="Left" Height="27" Margin="815,15,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="b_eliminar" Content="ELIMINAR" HorizontalAlignment="Left" Height="33" Margin="618,277,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="b_guardar" Content="GUARDAR" HorizontalAlignment="Left" Height="32" Margin="618,323,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="b_volver" Content="VOLVER" HorizontalAlignment="Left" Height="27" Margin="815,15,0,0" VerticalAlignment="Top" Width="96"/>
         <Label Content="CÓDIGO:" HorizontalAlignment="Left" Height="25" Margin="798,91,0,0" VerticalAlignment="Top" Width="65"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="798,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" FontSize="20"/>
-        <Button Content="ACTUALIZAR" HorizontalAlignment="Left" Height="32" Margin="618,371,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="VENDER" HorizontalAlignment="Left" Height="32" Margin="618,420,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_codigoProd" HorizontalAlignment="Left" Height="29" Margin="798,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" FontSize="20"/>
+        <Button x:Name="b_actualizar" Content="ACTUALIZAR" HorizontalAlignment="Left" Height="32" Margin="618,371,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="b_vender" Content="VENDER" HorizontalAlignment="Left" Height="32" Margin="618,420,0,0" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

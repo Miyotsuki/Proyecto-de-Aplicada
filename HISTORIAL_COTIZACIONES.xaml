@@ -8,9 +8,9 @@
         Title="HISTORIAL_COTIZACIONES" Height="275" Width="444">
     <Grid Margin="0,0,10,-6">
         <Label Content="HISTORIAL - COTIZACIONES" HorizontalAlignment="Left" Height="34" Margin="113,8,0,0" VerticalAlignment="Top" Width="215" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="28,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" />
-        <Button Content="BUSCAR" HorizontalAlignment="Left" Height="25" Margin="309,62,0,0" VerticalAlignment="Top" Width="101"/>
-        <ListView HorizontalAlignment="Left" Height="138" Margin="28,107,0,0" VerticalAlignment="Top" Width="382">
+        <TextBox x:Name="tb_bucarCotizacion" HorizontalAlignment="Left" Height="25" Margin="28,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" />
+        <Button x:Name="b_buscar" Content="BUSCAR" HorizontalAlignment="Left" Height="25" Margin="309,62,0,0" VerticalAlignment="Top" Width="101"/>
+        <ListView x:Name="lv_cotizaciones" HorizontalAlignment="Left" Height="138" Margin="28,107,0,0" VerticalAlignment="Top" Width="382">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="CODIGO" Width="60"/>
@@ -18,7 +18,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="VOLVER" HorizontalAlignment="Left" Height="19" Margin="356,10,0,0" VerticalAlignment="Top" Width="71"/>
+        <Button x:Name="b_volver" Content="VOLVER" HorizontalAlignment="Left" Height="19" Margin="356,10,0,0" VerticalAlignment="Top" Width="71"/>
 
     </Grid>
 </Window>

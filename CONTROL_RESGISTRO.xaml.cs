@@ -15,15 +15,13 @@ using System.Windows.Shapes;
 namespace Proyecto_de_Aplicada
 {
     /// <summary>
-    /// Lógica de interacción para HISTORIAL.xaml
+    /// Lógica de interacción para CONTROL_RESGISTRO.xaml
     /// </summary>
-    public partial class HISTORIAL : Window
+    public partial class CONTROL_RESGISTRO : Window
     {
-        public HISTORIAL()
+        public CONTROL_RESGISTRO()
         {
             InitializeComponent();
         }
-
-        
     }
 }

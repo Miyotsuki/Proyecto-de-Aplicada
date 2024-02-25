@@ -15,15 +15,13 @@ using System.Windows.Shapes;
 namespace Proyecto_de_Aplicada
 {
     /// <summary>
-    /// Lógica de interacción para HISTORIAL.xaml
+    /// Lógica de interacción para HISTORIAL_COTIZACIONES.xaml
     /// </summary>
-    public partial class HISTORIAL : Window
+    public partial class HISTORIAL_COTIZACIONES : Window
     {
-        public HISTORIAL()
+        public HISTORIAL_COTIZACIONES()
         {
             InitializeComponent();
         }
-
-        
     }
 }

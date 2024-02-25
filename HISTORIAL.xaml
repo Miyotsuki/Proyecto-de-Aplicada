@@ -5,11 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_de_Aplicada"
         mc:Ignorable="d"
-        Title="HISTORIAL" Height="450" Width="800">
-    <Grid>
-        <Label Content="HISTORIAL" HorizontalAlignment="Center" Height="47" Margin="0,10,0,0" VerticalAlignment="Top" Width="136" FontSize="24"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="51,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269"/>
-        <Button Content="BUSCAR" HorizontalAlignment="Left" Height="25" Margin="332,70,0,0" VerticalAlignment="Top" Width="101"/>
+        Title="HISTORIAL" Height="281" Width="490">
+    <Grid Margin="0,0,10,-6">
+        <Label Content="HISTORIAL -CLIENTES" HorizontalAlignment="Center" Height="34" Margin="0,25,0,0" VerticalAlignment="Top" Width="154" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="49,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" TextChanged="TextBox_TextChanged"/>
+        <Button Content="BUSCAR" HorizontalAlignment="Left" Height="25" Margin="330,64,0,0" VerticalAlignment="Top" Width="101"/>
+        <ListView HorizontalAlignment="Center" Height="139" Margin="0,94,0,0" VerticalAlignment="Top" Width="382">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="CODIGO" Width="60"/>
+                    <GridViewColumn Header="CLIENTE" Width="315"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="VOLVER" HorizontalAlignment="Left" Height="19" Margin="409,10,0,0" VerticalAlignment="Top" Width="71"/>
 
     </Grid>
 </Window>

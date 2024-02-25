@@ -1,0 +1,24 @@
+﻿<Window x:Class="Proyecto_de_Aplicada.HISTORIAL_COTIZACIONES"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_de_Aplicada"
+        mc:Ignorable="d"
+        Title="HISTORIAL_COTIZACIONES" Height="275" Width="444">
+    <Grid Margin="0,0,10,-6">
+        <Label Content="HISTORIAL - COTIZACIONES" HorizontalAlignment="Left" Height="34" Margin="113,8,0,0" VerticalAlignment="Top" Width="215" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="28,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" TextChanged="TextBox_TextChanged"/>
+        <Button Content="BUSCAR" HorizontalAlignment="Left" Height="25" Margin="309,62,0,0" VerticalAlignment="Top" Width="101"/>
+        <ListView HorizontalAlignment="Left" Height="138" Margin="28,107,0,0" VerticalAlignment="Top" Width="382">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="CODIGO" Width="60"/>
+                    <GridViewColumn Header="N° COTIZACIÓN" Width="315"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="VOLVER" HorizontalAlignment="Left" Height="19" Margin="356,10,0,0" VerticalAlignment="Top" Width="71"/>
+
+    </Grid>
+</Window>

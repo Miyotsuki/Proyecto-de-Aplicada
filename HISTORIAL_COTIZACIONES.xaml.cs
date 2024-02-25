@@ -23,5 +23,11 @@ namespace Proyecto_de_Aplicada
         {
             InitializeComponent();
         }
+
+        private void lv_cotizaciones_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            COTIZAR cotizar = new COTIZAR();
+            cotizar.Show();
+        }
     }
 }

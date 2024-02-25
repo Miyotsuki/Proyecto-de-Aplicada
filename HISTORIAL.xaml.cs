@@ -24,6 +24,10 @@ namespace Proyecto_de_Aplicada
             InitializeComponent();
         }
 
-        
+        private void lv_clientes_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            HISTORIAL_COTIZACIONES HistorialCot = new HISTORIAL_COTIZACIONES();
+            HistorialCot.Show();
+        }
     }
 }

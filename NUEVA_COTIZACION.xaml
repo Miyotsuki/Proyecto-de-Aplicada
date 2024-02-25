@@ -16,10 +16,10 @@
         <TextBox x:Name="tb_apellidoClient" HorizontalAlignment="Left" Height="32" Margin="140,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" />
         <Label Content="TELÉFONO:" HorizontalAlignment="Left" Height="31" Margin="58,241,0,0" VerticalAlignment="Top" Width="82"/>
         <TextBox x:Name="tb_telefonoCliente" HorizontalAlignment="Left" Height="32" Margin="142,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" Text="-"/>
-        <Button x:Name="b_cotizacion" Content="NUEVA COTIZACION" HorizontalAlignment="Left" Height="34" Margin="535,132,0,0" VerticalAlignment="Top" Width="160"/>
+        <Button x:Name="b_cotizacion" Content="NUEVA COTIZACION" HorizontalAlignment="Left" Height="34" Margin="535,132,0,0" VerticalAlignment="Top" Width="160" Click="b_cotizacion_Click"/>
         <Label Content="CORREO:" HorizontalAlignment="Left" Height="32" Margin="61,290,0,0" VerticalAlignment="Top" Width="82"/>
         <TextBox x:Name="tb_cliente" HorizontalAlignment="Left" Height="32" Margin="145,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" Text="-"/>
-        <Button x:Name="b_volver" Content="VOLVER" HorizontalAlignment="Left" Height="22" Margin="680,27,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button x:Name="b_volver" Content="VOLVER" HorizontalAlignment="Left" Height="22" Margin="680,27,0,0" VerticalAlignment="Top" Width="110" Click="b_volver_Click"/>
         <Button x:Name="b_limpiar" Content="LIMPIAR" HorizontalAlignment="Left" Height="34" Margin="535,183,0,0" VerticalAlignment="Top" Width="160"/>
 
     </Grid>

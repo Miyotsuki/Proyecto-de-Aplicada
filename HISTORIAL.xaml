@@ -8,9 +8,9 @@
         Title="HISTORIAL" Height="281" Width="490">
     <Grid Margin="0,0,10,-6">
         <Label Content="HISTORIAL -CLIENTES" HorizontalAlignment="Center" Height="34" Margin="0,25,0,0" VerticalAlignment="Top" Width="154" FontSize="16"/>
-        <TextBox x:Name="tb_bucarCliente" HorizontalAlignment="Left" Height="25" Margin="49,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="tb_bucarCliente" HorizontalAlignment="Left" Height="25" Margin="49,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269"/>
         <Button x:Name="b_buscarCliente" Content="BUSCAR" HorizontalAlignment="Left" Height="25" Margin="330,64,0,0" VerticalAlignment="Top" Width="101"/>
-        <ListView x:Name="lv_clientes" HorizontalAlignment="Center" Height="139" Margin="0,94,0,0" VerticalAlignment="Top" Width="382">
+        <ListView x:Name="lv_clientes" HorizontalAlignment="Center" Height="139" Margin="0,94,0,0" VerticalAlignment="Top" Width="382" MouseDoubleClick="lv_clientes_MouseDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="CODIGO" Width="60"/>

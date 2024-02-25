@@ -24,5 +24,22 @@ namespace Proyecto_de_Aplicada
             InitializeComponent();
         }
 
+        private void b_historialCientes_Click(object sender, RoutedEventArgs e)
+        {
+            HISTORIAL Historial = new HISTORIAL();
+            Historial.Show();
+        }
+
+        private void b_nuevaCotizacion_Click(object sender, RoutedEventArgs e)
+        {
+            NUEVA_COTIZACION CotizarClient =   new NUEVA_COTIZACION();
+            CotizarClient.Show();
+        }
+
+        private void b_controlRegistro_Click(object sender, RoutedEventArgs e)
+        {
+            CONTROL_RESGISTRO Registro = new CONTROL_RESGISTRO();   
+            Registro.Show();   
+        }
     }
 }

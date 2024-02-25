@@ -24,6 +24,15 @@ namespace Proyecto_de_Aplicada
             InitializeComponent();
         }
 
+        private void b_cotizacion_Click(object sender, RoutedEventArgs e)
+        {
+            COTIZAR newCotizacion = new COTIZAR();  
+            newCotizacion.Show();
+        }
 
+        private void b_volver_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

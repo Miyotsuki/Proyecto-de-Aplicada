@@ -10,7 +10,7 @@
         <Label Content="HISTORIAL - COTIZACIONES" HorizontalAlignment="Left" Height="34" Margin="113,8,0,0" VerticalAlignment="Top" Width="215" FontSize="16"/>
         <TextBox x:Name="tb_bucarCotizacion" HorizontalAlignment="Left" Height="25" Margin="28,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" />
         <Button x:Name="b_buscar" Content="BUSCAR" HorizontalAlignment="Left" Height="25" Margin="309,62,0,0" VerticalAlignment="Top" Width="101"/>
-        <ListView x:Name="lv_cotizaciones" HorizontalAlignment="Left" Height="138" Margin="28,107,0,0" VerticalAlignment="Top" Width="382">
+        <ListView x:Name="lv_cotizaciones" HorizontalAlignment="Left" Height="138" Margin="28,107,0,0" VerticalAlignment="Top" Width="382" MouseDoubleClick="lv_cotizaciones_MouseDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="CODIGO" Width="60"/>

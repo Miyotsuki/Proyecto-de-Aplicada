@@ -8,9 +8,9 @@
         Title="MENU" Height="450" Width="800">
     <Grid>
         <Label Content="MENÚ" HorizontalAlignment="Center" Height="76" Margin="0,34,0,0" VerticalAlignment="Top" Width="180" FontSize="48" FontWeight="Bold"/>
-        <Button x:Name="b_historialCientes" Content="HISTORIAL" HorizontalAlignment="Left" Height="36" Margin="87,181,0,0" VerticalAlignment="Top" Width="165"/>
-        <Button x:Name="b_nuevaCotizacion" Content="NUEVA COTIZACIÓN" HorizontalAlignment="Left" Height="36" Margin="325,181,0,0" VerticalAlignment="Top" Width="165" />
-        <Button x:Name="b_controlRegistro" Content="CONTROL DE REGISTRO" HorizontalAlignment="Left" Height="36" Margin="562,181,0,0" VerticalAlignment="Top" Width="165" />
+        <Button x:Name="b_historialCientes" Content="HISTORIAL" HorizontalAlignment="Left" Height="36" Margin="87,181,0,0" VerticalAlignment="Top" Width="165" Click="b_historialCientes_Click"/>
+        <Button x:Name="b_nuevaCotizacion" Content="NUEVA COTIZACIÓN" HorizontalAlignment="Left" Height="36" Margin="325,181,0,0" VerticalAlignment="Top" Width="165" Click="b_nuevaCotizacion_Click" />
+        <Button x:Name="b_controlRegistro" Content="CONTROL DE REGISTRO" HorizontalAlignment="Left" Height="36" Margin="562,181,0,0" VerticalAlignment="Top" Width="165" Click="b_controlRegistro_Click" />
 
     </Grid>
 </Window>

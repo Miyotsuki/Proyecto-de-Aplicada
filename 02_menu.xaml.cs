@@ -54,5 +54,7 @@ namespace Proyecto_de_Aplicada
         {
             DataContext = new Vistas.Prestamos();
         }
+
+      
     }
 }

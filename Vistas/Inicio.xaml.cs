@@ -10,21 +10,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Proyecto_de_Aplicada
+namespace Proyecto_de_Aplicada.Vistas
 {
     /// <summary>
-    /// Lógica de interacción para _01_login.xaml
+    /// Lógica de interacción para Inicio.xaml
     /// </summary>
-    public partial class _01_login : Window
+    public partial class Inicio : UserControl
     {
-        public _01_login()
+        public Inicio()
         {
             InitializeComponent();
         }
 
-        private void b_iniciar_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }

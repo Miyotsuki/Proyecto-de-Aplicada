@@ -44,5 +44,15 @@ namespace Proyecto_de_Aplicada
         {
             Application.Current.Shutdown();
         }
+
+        private void b_gestionar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void b_prestamos_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new Vistas.Prestamos();
+        }
     }
 }

@@ -104,20 +104,60 @@
                        FontSize="12"
                        FontWeight="Bold" Margin="0,30,0,0"/>
 
-                <Button x:Name="b_historialCientes"
-                        Content="HISTORIAL"
+                <Button x:Name="b_inicio"
+                    Content="INICIO"
+                    HorizontalAlignment="Center"
+                    Height="36"
+                    Margin="0,108,0,0"
+                    VerticalAlignment="Top"
+                    Width="164"
+                    Click="b_gestionar_Click"
+                    Cursor="Hand"
+                    Foreground="White"
+>
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background"
+                                    Value="#87ceeb"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                    <Setter Property="Background"
+                                            Value="#0077b6"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                
+                
+                
+                <Button x:Name="b_prestamos"
+                        Content="PRESTAMOS"
                         HorizontalAlignment="Center"
-                        Height="36" Margin="0,208,0,0"
+                        Height="36"
+                        Margin="0,208,0,0"
                         VerticalAlignment="Top"
                         Width="164"
-                        Click="b_historialCientes_Click"
+                        Click="b_prestamos_Click"
                         Cursor="Hand"
                         Foreground="White"
     >
 
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="#40e0d0"/>
+                            <Setter Property="Background" Value="#5f9ea0"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Setter Property="Background" Value="#0077b6"/>
@@ -131,14 +171,51 @@
                             <Border CornerRadius="9"
                                     Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
-                              HorizontalAlignment="Center"/>
+                                                  HorizontalAlignment="Center"/>
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
 
-                <Button x:Name="b_controlRegistro" Content="CONTROL DE REGISTRO" HorizontalAlignment="Center" Height="36" Margin="0,117,0,0" VerticalAlignment="Top" Width="164" Click="b_controlRegistro_Click_1"/>
 
+
+
+                <Button x:Name="b_gestionar"
+                    Content="GESTIONAR"
+                    HorizontalAlignment="Center"
+                    Height="36"
+                    Margin="0,308,0,0"
+                    VerticalAlignment="Top"
+                    Width="164"
+                    Click="b_gestionar_Click"
+                    Cursor="Hand"
+                    Foreground="White"
+>
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background"
+                                    Value="#87ceeb"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                    <Setter Property="Background"
+                                            Value="#0077b6"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
             </Grid>
 
 

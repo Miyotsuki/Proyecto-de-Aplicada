@@ -37,7 +37,7 @@ namespace Proyecto_de_Aplicada
 
         private void b_historialCientes_Click(object sender, RoutedEventArgs e)
         {
-
+            DataContext = new Vistas.Prestamos();
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)

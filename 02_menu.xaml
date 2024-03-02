@@ -7,8 +7,8 @@
         xmlns:viewmodels="clr-namespace:Proyecto_de_Aplicada.Vistas"
         mc:Ignorable="d"
         Title="_02_menu"
-        Height="450"
-        Width="800"
+        Height="550"
+        Width="1000"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         AllowsTransparency="True"
@@ -22,6 +22,12 @@
                       DataType= "{x:Type viewmodels:Inicio}">
             <viewmodels:Inicio DataContext ="{Binding}"/>
         </DataTemplate>
+
+        <DataTemplate x:Name="Prestamos"
+              DataType= "{x:Type viewmodels:Prestamos}">
+            <viewmodels:Prestamos DataContext ="{Binding}"/>
+        </DataTemplate>
+
     </Window.Resources>
 
 
@@ -83,25 +89,63 @@
             </Grid>
 
             <Grid x:Name="BarraMenu"
-              Width="200"
-              Height="415"
+              Width="172"
+              Height="515"
               HorizontalAlignment="Left"
               Background="Transparent"
               VerticalAlignment="Bottom">
 
                 <Border CornerRadius="0,0,0,10"
                     Background="#b0e0e6"/>
-                <Label Content="MENÚ" HorizontalAlignment="Left" Height="76" Margin="20,60,0,0" VerticalAlignment="Top" Width="180" FontSize="48" FontWeight="Bold"/>
-                <Button x:Name="b_historialCientes" Content="HISTORIAL" HorizontalAlignment="Center" Height="36" Margin="0,208,0,0" VerticalAlignment="Top" Width="164" Click="b_historialCientes_Click"/>
-                <Button x:Name="b_controlRegistro" Content="CONTROL DE REGISTRO" HorizontalAlignment="Center" Height="36" Margin="0,155,0,0" VerticalAlignment="Top" Width="164" Click="b_controlRegistro_Click_1"/>
+                <Label Content="Biblioteca UNC"
+                       HorizontalAlignment="Center"
+                       Height="24" VerticalAlignment="Top"
+                       Width="110"
+                       FontSize="12"
+                       FontWeight="Bold" Margin="0,30,0,0"/>
+
+                <Button x:Name="b_historialCientes"
+                        Content="HISTORIAL"
+                        HorizontalAlignment="Center"
+                        Height="36" Margin="0,208,0,0"
+                        VerticalAlignment="Top"
+                        Width="164"
+                        Click="b_historialCientes_Click"
+                        Cursor="Hand"
+                        Foreground="White"
+    >
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#40e0d0"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#0077b6"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="b_controlRegistro" Content="CONTROL DE REGISTRO" HorizontalAlignment="Center" Height="36" Margin="0,117,0,0" VerticalAlignment="Top" Width="164" Click="b_controlRegistro_Click_1"/>
 
             </Grid>
 
 
             <Grid x:Name="Contenido"
               Background="Transparent"
-              Width="600"
-              Height="415"
+              Width="830"
+              Height="515"
               VerticalAlignment="Bottom"
               HorizontalAlignment="Right">
 
